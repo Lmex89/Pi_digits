@@ -3,9 +3,9 @@ let block1;
 let block2;
 let clack;
 let count = 0;
-let digits = 5;
+let digits = 6;
 let counDiv = 0;
-const timeSteps= 5;
+const timeSteps= 150;
 let button;
 
 function preload(){
@@ -41,7 +41,7 @@ for (let i = 0; i < timeSteps; i++){
     const v2 = block2.bounce(block1);
     block1.v = v1;
     block2.v = v2;
-    clack.play();
+    //clack.play();
     count++;
   }
  if( block1.hitWall()){
