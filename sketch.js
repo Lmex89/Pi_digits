@@ -5,7 +5,7 @@ let clack;
 let count = 0;
 let digits = 5;
 let counDiv = 0;
-const timeSteps= 10;
+const timeSteps= 5;
 let button;
 
 function preload(){
@@ -22,7 +22,7 @@ function setup() {
   
   block1 = new Block(100,20,1,0,0);
   const m2 = Math.pow(100,digits-1);
-  block2 = new Block(200,150,m2,0.1/timeSteps,20);
+  block2 = new Block(200,150,m2,-0.1/timeSteps,20);
   countDiv = createDiv(count);
   countDiv.style('font-size','72pt');
  
