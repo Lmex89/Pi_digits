@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+
+ 
+</head>
+
+<body>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"> </script>
+  <script src="block.js"> </script>
+  <script src="sketch.js"></script>
+   
+  <main>
+    <h1>
+      Pi Day Computing digits!
+    </h1>
+<p> 
+  I have been thinking how to spend time while the contingency  is being held, perhaps many people prefer to do other things, like
+  whatching series, or some other things, I just decide give a try on this...
+
+</p>
+
+    <p> We are gonna have two sliding blocks and a wall, The first block start by coming in at some velocity from the right,
+       the second start out stationary.
+       </p>
+       <p>
+         Being overly-idealistic physicist, let's assume that there is no friction,
+         and that, all the collisions are perefectly elastic, which means no energy is lost.
+       </p>
+       <p>
+         The goal will be count how many collisions take place, and base on the collisions when the velocities are known, the final velocities are given by:
+         <br>
+         <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0e058a28805ec2d0254102cf0e8878ac02d818f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:41.271ex; height:6.176ex;" alt="v_{2}=\left({\frac {m_{2}-m_{1}}{m_{1}+m_{2}}}\right)u_{2}+\left({\frac {2m_{1}}{m_{1}+m_{2}}}\right)u_{1}\,.">
+         <br> 
+         <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b1e6fe3c4834421af0c9ff89fc015cd51c75400" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:40.624ex; height:6.176ex;" alt="v_{1}=\left({\frac {m_{1}-m_{2}}{m_{1}+m_{2}}}\right)u_{1}+\left({\frac {2m_{2}}{m_{1}+m_{2}}}\right)u_{2}\,">
+       </p>
+       and at the end! you will see, that the number of collision perefectly compute digits of pi, but why on earth! do the digits of pi show up here?, to answer that question we need to pull up
+       some physics'concepts... but we can say basically  the conservation of energy is where there is hidden circle!.
+
+       </p>
+
+       <p>
+         To have a complete explanation of how this interisting simulation is well explained you should visit the Youtube Channel 
+         
+         <a href="https://www.youtube.com/watch?v=HEfHFsfGXjs">3Blue1Brown </a>
+
+       </p>
+  </main>
+  <p> to start over the simulation hit the Refresh button By Luis Mex!!</p>
+</body>
+
+</html>
